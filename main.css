@@ -107,3 +107,7 @@ ol {
 a.active {
   border-bottom: 2px solid #f8ce41;
 }
+
+nav a:hover {
+  border-bottom: 2px solid pink;
+}
