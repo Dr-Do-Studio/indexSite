@@ -10,7 +10,7 @@ body {
 }
 div.hero-bg img {
   position: absolute;
-  top: -220px;
+  top: -20px;
   left: 0;
   width: 100%;
   max-width: none;
@@ -32,4 +32,78 @@ div.hero-bg img {
   outline: 0;
   border: none;
   width: 80px;
+}
+
+.d-header {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  z-index: 500;
+  overflow: hidden;
+  padding: 50px 90px;
+}
+.header-logo {
+  margin: 0;
+  padding: 0;
+}
+
+a img {
+  border: none;
+}
+img,
+video {
+  height: auto;
+}
+
+.header-logo a {
+  display: block;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: none;
+  width: 80px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+nav.menu {
+  float: right;
+}
+
+.main-menu ul {
+  list-style: none;
+}
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  display: inline;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.menu ul li a {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+  padding: 10px 0px;
+  margin-right: 80px;
+  position: relative;
+  text-decoration: none;
+}
+
+.site-logo img {
+  width: 200px;
+}
+
+a.active {
+  border-bottom: 2px solid #f8ce41;
 }
