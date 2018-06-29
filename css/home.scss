@@ -1,27 +1,10 @@
-//Theme color
-$DD-yellow: #ffcc1e;
-$DD-pink: #fb2366;
-$DD-blue: #003f87;
-$DD-green: #47d6c1;
-$DD-black: #000;
-$DD-white: #fff;
-
-//##      ##  ##########  ##          ##  ###########
-//##      ##  ##      ##  ####      ####  ##
-//##      ##  ##      ##  ##  ##  ##  ##  ##
-//##########  ##      ##  ##    ##    ##  ########
-//##########  ##      ##  ##          ##  ########
-//##      ##  ##      ##  ##          ##  ##
-//##      ##  ##      ##  ##          ##  ##
-//##      ##  ##########  ##          ##  ###########
-
 body {
-  background: $DD-black;
+  background: #000;
   font-family: "Quicksand", sans-serif;
   font-size: 1.7rem;
   font-style: normal;
   line-height: 1.5;
-  color: $DD-white;
+  color: #fff;
   margin: 0;
   padding: 0;
 }
@@ -33,7 +16,7 @@ h3 {
   font-family: "Quicksand", sans-serif;
 }
 p.section-content {
-  color: $DD-black;
+  color: black;
   font-size: 1.5rem;
   text-align: center;
   width: 80%;
@@ -42,7 +25,7 @@ p.section-content {
 }
 li a {
   text-decoration: none;
-  color: $DD-white;
+  color: white;
 }
 div.hero-bg img {
   position: fixed;
@@ -58,7 +41,7 @@ div.hero-bg img {
   width: 100%;
   height: 100%;
   opacity: 0.9;
-  background-color: $DD-black;
+  background-color: #000000;
 }
 
 .d-home-yellow .overlay {
@@ -68,7 +51,7 @@ div.hero-bg img {
   width: 100%;
   height: 100%;
   opacity: 1;
-  background-color: $DD-yellow;
+  background-color: #ffee00;
 }
 
 .header-logo a {
@@ -140,7 +123,7 @@ ol {
   display: inline-block;
   text-transform: uppercase;
   font-size: 14px;
-  color: $DD-white;
+  color: #fff;
   padding: 10px 0px;
   margin-right: 80px;
   position: relative;
@@ -152,11 +135,11 @@ ol {
 }
 
 a.active {
-  border-bottom: 2px solid $DD-yellow;
+  border-bottom: 2px solid #f8ce41;
 }
 
 nav a:hover {
-  border-bottom: 2px solid $DD-pink;
+  border-bottom: 2px solid pink;
 
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -189,7 +172,7 @@ div {
 
 h2 {
   font-size: 2rem;
-  color: $DD-black;
+  color: black;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   position: relative;
@@ -213,7 +196,7 @@ h1 {
   font-size: 3rem;
   line-height: 1.5;
   margin-top: 0;
-  color: $DD-white;
+  color: #ffffff;
 }
 .home-content-main h1 {
   width: 70%;
@@ -221,8 +204,8 @@ h1 {
 
 a.btn.btn-stroke {
   text-decoration: none;
-  color: $DD-yellow;
-  border: 2px solid $DD-yellow;
+  color: #f8ce41;
+  border: 2px solid #f8ce41;
   padding: 15px 60px;
 }
 
@@ -232,9 +215,9 @@ a.btn.btn-stroke {
 }
 
 a.btn.btn-stroke:hover {
-  color: $DD-black;
+  color: black;
   border: none;
-  background: $DD-yellow;
+  background: #f8ce41;
 
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -244,7 +227,7 @@ a.btn.btn-stroke:hover {
   display: block;
   width: 2px;
   height: 8.2rem;
-  background-color: $DD-yellow;
+  background-color: #f8ce41;
   position: absolute;
   right: 7.2rem;
   bottom: 0;
@@ -253,7 +236,7 @@ a.btn.btn-stroke:hover {
   display: block;
   width: 2px;
   height: 8.2rem;
-  background-color: $DD-black;
+  background-color: #000;
   position: absolute;
   right: 7.2rem;
   top: 0;
@@ -262,7 +245,7 @@ a.btn.btn-stroke:hover {
   display: block;
   width: 2px;
   height: 19.2rem;
-  background-color: $DD-yellow;
+  background-color: #f8ce41;
   position: absolute;
   right: 7.2rem;
   top: 0;
@@ -273,7 +256,7 @@ a.btn.btn-stroke:hover {
   display: inline-block;
   height: 4px;
   width: 12%;
-  background-color: $DD-black;
+  background-color: black;
   position: absolute;
   margin-top: 3.5rem;
   top: 43%;
@@ -282,7 +265,7 @@ a.btn.btn-stroke:hover {
 
 footer#footer {
   position: absolute;
-  background: $DD-black;
+  background: black;
   width: 100%;
   height: 440px;
 }

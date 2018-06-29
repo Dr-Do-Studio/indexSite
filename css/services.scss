@@ -1,0 +1,73 @@
+//Theme color
+$DD-yellow: #ffcc1e;
+$DD-pink: #fb2366;
+$DD-blue: #003f87;
+$DD-green: #47d6c1;
+$DD-black: #000;
+$DD-white: #fff;
+
+body {
+  background: $DD-white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.7rem;
+  font-style: normal;
+  line-height: 1.5;
+  color: $DD-white;
+  margin: 0;
+  padding: 0;
+}
+
+div.hero-bg img {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  max-width: none;
+}
+
+.home-content-main h1 {
+  text-align: center;
+  width: 100%;
+  font-size: 80px;
+}
+.d-home .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  background: none;
+}
+
+.d-home-yellow .overlay {
+  background-color: white !important;
+}
+
+.row {
+  width: 86%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cursor {
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: -5px;
+  width: 2px;
+  /* Change colour of Cursor Here */
+  background-color: black;
+  z-index: 1;
+  animation: flash 0.5s none infinite alternate;
+}
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

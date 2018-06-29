@@ -16,7 +16,7 @@ h3 {
   font-family: "Quicksand", sans-serif; }
 
 p.section-content {
-  color: black;
+  color: #000;
   font-size: 1.5rem;
   text-align: center;
   width: 80%;
@@ -25,7 +25,7 @@ p.section-content {
 
 li a {
   text-decoration: none;
-  color: white; }
+  color: #fff; }
 
 div.hero-bg img {
   position: fixed;
@@ -41,7 +41,7 @@ div.hero-bg img {
   width: 100%;
   height: 100%;
   opacity: 0.9;
-  background-color: #000000; }
+  background-color: #000; }
 
 .d-home-yellow .overlay {
   position: absolute;
@@ -50,7 +50,7 @@ div.hero-bg img {
   width: 100%;
   height: 100%;
   opacity: 1;
-  background-color: #ffee00; }
+  background-color: #ffcc1e; }
 
 .header-logo a {
   display: block;
@@ -124,10 +124,10 @@ ol {
   width: 200px; }
 
 a.active {
-  border-bottom: 2px solid #f8ce41; }
+  border-bottom: 2px solid #ffcc1e; }
 
 nav a:hover {
-  border-bottom: 2px solid pink;
+  border-bottom: 2px solid #fb2366;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
@@ -156,7 +156,7 @@ div {
 
 h2 {
   font-size: 2rem;
-  color: black;
+  color: #000;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   position: relative;
@@ -179,15 +179,15 @@ h1 {
   font-size: 3rem;
   line-height: 1.5;
   margin-top: 0;
-  color: #ffffff; }
+  color: #fff; }
 
 .home-content-main h1 {
   width: 70%; }
 
 a.btn.btn-stroke {
   text-decoration: none;
-  color: #f8ce41;
-  border: 2px solid #f8ce41;
+  color: #ffcc1e;
+  border: 2px solid #ffcc1e;
   padding: 15px 60px; }
 
 .home-content-buttons {
@@ -195,9 +195,9 @@ a.btn.btn-stroke {
   display: inline-block; }
 
 a.btn.btn-stroke:hover {
-  color: black;
+  color: #000;
   border: none;
-  background: #f8ce41;
+  background: #ffcc1e;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
@@ -205,7 +205,7 @@ a.btn.btn-stroke:hover {
   display: block;
   width: 2px;
   height: 8.2rem;
-  background-color: #f8ce41;
+  background-color: #ffcc1e;
   position: absolute;
   right: 7.2rem;
   bottom: 0; }
@@ -223,7 +223,7 @@ a.btn.btn-stroke:hover {
   display: block;
   width: 2px;
   height: 19.2rem;
-  background-color: #f8ce41;
+  background-color: #ffcc1e;
   position: absolute;
   right: 7.2rem;
   top: 0; }
@@ -233,7 +233,7 @@ a.btn.btn-stroke:hover {
   display: inline-block;
   height: 4px;
   width: 12%;
-  background-color: black;
+  background-color: #000;
   position: absolute;
   margin-top: 3.5rem;
   top: 43%;
@@ -241,7 +241,7 @@ a.btn.btn-stroke:hover {
 
 footer#footer {
   position: absolute;
-  background: black;
+  background: #000;
   width: 100%;
   height: 440px; }
 
