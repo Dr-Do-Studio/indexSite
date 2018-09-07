@@ -343,6 +343,9 @@ div.carousel-indicators img {
 
 .carousel-indicators {
   text-align: center;
+  display: inline-block;
+  width: 100%;
+  padding-top: 80px;
 }
 
 .home-content-p3 h2 {
@@ -363,6 +366,7 @@ div.carousel-indicators img {
 .mobile,
 .other {
   cursor: pointer;
+  float: left;
 }
 .web .web-dev-icon-1,
 .mobile .mobile-dev-icon-1,
@@ -378,11 +382,23 @@ div.carousel-indicators img {
 .mobile:hover .mobile-dev-icon-2,
 .other:hover .other-dev-icon-2 {
   display: block;
-  position: absolute;
   width: 20%;
 }
 .web:hover .web-dev-icon-1,
 .mobile:hover .mobile-dev-icon-1,
 .other:hover .other-dev-icon-1 {
   display: none;
+}
+img.web-dev-icon-2,
+img.mobile-dev-icon-2,
+img.other-dev-icon-2 {
+  margin: 0 auto;
+}
+
+span.dot img {
+  width: 100% !important;
+}
+
+span.dot {
+  margin-right: 10%;
 }
