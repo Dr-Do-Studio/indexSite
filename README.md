@@ -22,3 +22,14 @@ From: your current branch
 To: develop
 Add other team members as reviewers
 ```
+
+
+**In order to edit styling**
+```
+#!
+Edit .scss file
+
+in terminal:
+sass [filename].scss [filename].css
+```
+Please do NOT edit any css file directly
