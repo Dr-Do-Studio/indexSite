@@ -32,4 +32,4 @@ Edit .scss file
 in terminal:
 sass [filename].scss [filename].css
 ```
-Please do NOT edit any css file directly
+# Please do NOT edit any css file directly
