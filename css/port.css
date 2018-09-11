@@ -73,7 +73,7 @@ section.d-port-project {
 section.our-team {
   min-height: 500px;
   overflow: hidden;
-  background: #ccc;
+  background-image: url("../imgs/Port-team.jpg");
   display: block;
   position: relative; }
 
