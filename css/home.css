@@ -304,7 +304,8 @@ div.carousel-indicators img {
 .carousel-indicators {
   text-align: center;
   display: inline-block;
-  width: 100%; }
+  width: 100%;
+  padding-top: 80px; }
 
 .home-content-p3 h2 {
   color: white; }

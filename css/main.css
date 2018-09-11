@@ -13,7 +13,8 @@ p,
 h1,
 h2,
 h3 {
-  font-family: "Cabin", sans-serif; }
+  font-family: "Cabin", sans-serif;
+  margin: 0; }
 
 h1 {
   letter-spacing: 3px; }
@@ -72,16 +73,6 @@ div.hero-bg img {
   z-index: 500;
   overflow: hidden;
   padding: 50px 90px; }
-
-
-  .d-header-background {
-    width: 100%;
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-    z-index: 500;
-    overflow: hidden;
-    padding: 74px 90px; }
 
 .header-logo {
   margin: 0;
