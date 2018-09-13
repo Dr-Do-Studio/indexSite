@@ -69,6 +69,9 @@ h1 {
   line-height: 1.5;
   margin-top: 0;
   color: #fff; }
+  @media screen and (max-width: 820px) {
+    h1 {
+      font-size: 2rem; } }
 
 a,
 a::after {
@@ -171,7 +174,7 @@ a.active {
 .yellow-btn-stroke {
   color: #ffcc1e;
   border: 2px solid #ffcc1e; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 820px) {
     .yellow-btn-stroke {
       width: 100%; } }
 
@@ -179,9 +182,10 @@ a.active {
   color: #fb2366;
   border: 2px solid #fb2366;
   margin-left: 40px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 820px) {
     .pink-btn-stroke {
       margin-left: 0;
+      margin-top: 10px;
       width: 100%; } }
 
 footer#footer {
