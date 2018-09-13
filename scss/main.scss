@@ -163,11 +163,10 @@ nav.menu {
   font-size: 14px;
   color: $DD-white;
   padding: 10px 0px;
-  margin-right: 80px;
+  margin-right: 0;
   position: relative;
   text-decoration: none;
   @media screen and (max-width: $break-small) {
-    margin-right: 40px;
   }
 }
 
@@ -202,8 +201,8 @@ a.active {
   border: 2px solid $DD-pink;
 }
 
-.btn,
-a.btn::after {
+a,
+a::after {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;

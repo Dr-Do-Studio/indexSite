@@ -127,12 +127,9 @@ nav.menu {
   font-size: 14px;
   color: #fff;
   padding: 10px 0px;
-  margin-right: 80px;
+  margin-right: 0;
   position: relative;
   text-decoration: none; }
-  @media screen and (max-width: 768px) {
-    .menu ul li a {
-      margin-right: 40px; } }
 
 .site-logo img {
   width: 200px; }
@@ -158,8 +155,8 @@ a.active {
   color: #fb2366;
   border: 2px solid #fb2366; }
 
-.btn,
-a.btn::after {
+a,
+a::after {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
