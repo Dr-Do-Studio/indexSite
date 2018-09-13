@@ -70,9 +70,6 @@ h1 {
   margin-top: 0;
   color: #fff; }
 
-section {
-  padding: 40px; }
-
 a,
 a::after {
   -webkit-transition: all 0.3s;
