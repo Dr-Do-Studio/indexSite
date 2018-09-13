@@ -23,6 +23,51 @@ li a {
   text-decoration: none;
   color: #fff; }
 
+ul,
+ol {
+  padding: 0;
+  margin: 0; }
+
+*,
+::after,
+::before {
+  box-sizing: border-box; }
+
+div {
+  margin: 0; }
+
+.row {
+  width: 86%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+h2 {
+  font-size: 2rem;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  margin-left: 6px;
+  text-align: center; }
+
+h3 {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  margin-left: 6px; }
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.5;
+  margin-top: 0;
+  color: #fff; }
+
 .header-logo a {
   display: block;
   position: fixed;
@@ -68,18 +113,8 @@ nav.menu {
 .main-menu ul {
   list-style: none; }
 
-ul,
-ol {
-  padding: 0;
-  margin: 0; }
-
 .menu ul li {
   display: inline; }
-
-*,
-::after,
-::before {
-  box-sizing: border-box; }
 
 .menu ul li a {
   display: inline-block;
@@ -97,62 +132,31 @@ ol {
 a.active {
   border-bottom: 2px solid #ffcc1e; }
 
+/*
 nav a:hover {
-  border-bottom: 2px solid #fb2366;
+  border-bottom: 2px solid $DD-pink;
   -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-
-div {
-  margin: 0; }
-
-.row {
-  width: 86%;
-  max-width: 1200px;
-  margin: 0 auto; }
-
-h2 {
-  font-size: 2rem;
-  color: #000;
-  text-transform: uppercase;
-  letter-spacing: 0.3rem;
-  position: relative;
-  margin-top: 0;
-  margin-bottom: 1.2rem;
-  margin-left: 6px;
-  text-align: center; }
-
-h3 {
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.5);
-  text-transform: uppercase;
-  letter-spacing: 0.3rem;
-  position: relative;
-  margin-top: 0;
-  margin-bottom: 1.2rem;
-  margin-left: 6px; }
-
-h1 {
-  font-size: 3rem;
-  line-height: 1.5;
-  margin-top: 0;
-  color: #fff; }
-
+  transition: all 0.3s ease-in-out;
+}
+*/
 a.btn.btn-stroke {
   text-decoration: none;
   color: #ffcc1e;
   border: 2px solid #ffcc1e;
   padding: 15px 60px; }
 
-.home-content-buttons {
-  margin-top: 80px;
-  display: inline-block; }
+.btn::after {
+  height: 100%;
+  left: -35%;
+  top: 0;
+  transform: skew(50deg);
+  transition-duration: 0.6s;
+  transform-origin: top left;
+  width: 0; }
 
-a.btn.btn-stroke:hover {
-  color: #000;
-  border: none;
-  background: #ffcc1e;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
+.btn-5:hover:after {
+  height: 100%;
+  width: 135%; }
 
 footer#footer {
   position: absolute;

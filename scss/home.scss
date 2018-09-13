@@ -59,79 +59,6 @@ div.hero-bg img {
   background-color: #fff;
 }
 
-.header-logo a {
-  display: block;
-  position: fixed;
-  margin: 9px 0 0;
-  padding: 0;
-  outline: 0;
-  border: none;
-  width: 80px;
-}
-
-.d-header {
-  width: 100%;
-  background-color: transparent;
-  position: fixed;
-  top: 0;
-  z-index: 500;
-  overflow: hidden;
-  padding: 50px 90px;
-}
-.header-logo {
-  margin: 0;
-  padding: 0;
-}
-
-.header-logo a {
-  display: block;
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  border: none;
-  width: 80px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-nav.menu {
-  float: right;
-}
-
-.main-menu ul {
-  list-style: none;
-}
-
-.menu ul li {
-  display: inline;
-}
-
-.menu ul li a {
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 14px;
-  color: #fff;
-  padding: 10px 0px;
-  margin-right: 80px;
-  position: relative;
-  text-decoration: none;
-}
-
-.site-logo img {
-  width: 200px;
-}
-
-a.active {
-  border-bottom: 2px solid #f8ce41;
-}
-
-nav a:hover {
-  border-bottom: 2px solid pink;
-
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
 section#home {
   width: 100%;
   height: 100%;
@@ -140,37 +67,12 @@ section#home {
   position: relative;
 }
 .home-content-main {
-  padding-top: 16rem;
+  padding-top: 12rem;
   position: relative;
   width: 100%;
 }
 .home-content-p2 {
   padding-top: 8rem;
-}
-
-.home-content-main h1 {
-  width: 70%;
-}
-
-a.btn.btn-stroke {
-  text-decoration: none;
-  color: #f8ce41;
-  border: 2px solid #f8ce41;
-  padding: 15px 60px;
-}
-
-.home-content-buttons {
-  margin-top: 80px;
-  display: inline-block;
-}
-
-a.btn.btn-stroke:hover {
-  color: black;
-  border: none;
-  background: #f8ce41;
-
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 
 .home-content-line {
@@ -224,10 +126,6 @@ div.carousel-indicators img {
   padding-top: 80px;
 }
 
-.home-content-p3 h2 {
-  color: white;
-}
-
 .home-content-p3 h2:after {
   background-color: white;
 }
@@ -277,4 +175,11 @@ span.dot img {
 
 span.dot {
   margin-right: 10%;
+}
+
+//Part 1
+section.d-home {
+  background-image: url(../imgs/Home-P1.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
 }

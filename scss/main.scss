@@ -6,7 +6,17 @@ $DD-green: #47d6c1;
 $DD-black: #000;
 $DD-white: #fff;
 
-// Main
+//media query break point
+$break-median: 1024px;
+$break-small: 768px;
+$break-mobile: 414px;
+
+//##     ##
+//#### ####
+//## ### ##
+//##     ##
+//##     ##
+//##     ##
 
 body {
   background: $DD-black;
@@ -68,6 +78,7 @@ h2 {
 }
 
 h3 {
+  text-align: center;
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
@@ -78,10 +89,14 @@ h3 {
   margin-left: 6px;
 }
 h1 {
+  text-align: center;
   font-size: 3rem;
   line-height: 1.5;
   margin-top: 0;
   color: $DD-white;
+}
+section {
+  padding: 40px;
 }
 
 //header
@@ -151,6 +166,9 @@ nav.menu {
   margin-right: 80px;
   position: relative;
   text-decoration: none;
+  @media screen and (max-width: $break-small) {
+    margin-right: 40px;
+  }
 }
 
 .site-logo img {
@@ -163,30 +181,58 @@ a.active {
   border-bottom: 2px solid $DD-yellow;
 }
 
-nav a:hover {
-  border-bottom: 2px solid $DD-pink;
-
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+.button-container {
+  text-align: center;
+  padding: 30px;
+  margin-top: 40px;
 }
 
-a.btn.btn-stroke {
+.btn {
   text-decoration: none;
+  padding: 15px 60px;
+  margin: 40px;
+}
+.yellow-btn-stroke {
   color: $DD-yellow;
   border: 2px solid $DD-yellow;
-  padding: 15px 60px;
 }
 
-.home-content-buttons {
-  margin-top: 80px;
-  display: inline-block;
+.pink-btn-stroke {
+  color: $DD-pink;
+  border: 2px solid $DD-pink;
 }
 
-a.btn.btn-stroke:hover {
-  color: $DD-black;
-  border: none;
-  background: $DD-yellow;
+.btn,
+a.btn::after {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
 
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+a.btn::before,
+a.btn::after {
+  background: #fff;
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+
+.btn {
+  overflow: hidden;
+}
+
+.btn::after {
+  height: 100%;
+  left: -35%;
+  top: 0;
+  transform: skew(50deg);
+  transition-duration: 0.6s;
+  transform-origin: top left;
+  width: 0;
+}
+
+.btn:hover:after {
+  height: 100%;
+  width: 135%;
 }
