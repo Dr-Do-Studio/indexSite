@@ -165,14 +165,24 @@ a.active {
 .btn {
   text-decoration: none;
   padding: 15px 60px;
-  margin: 40px; }
+  margin: 0;
+  display: inline-block; }
 
 .yellow-btn-stroke {
   color: #ffcc1e;
   border: 2px solid #ffcc1e; }
+  @media screen and (max-width: 820px) {
+    .yellow-btn-stroke {
+      width: 100%; } }
 
 .pink-btn-stroke {
   color: #fb2366;
-  border: 2px solid #fb2366; }
+  border: 2px solid #fb2366;
+  margin-left: 40px; }
+  @media screen and (max-width: 820px) {
+    .pink-btn-stroke {
+      margin-left: 0;
+      margin-top: 20px;
+      width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */

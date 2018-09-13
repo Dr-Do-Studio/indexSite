@@ -8,7 +8,7 @@ $DD-white: #fff;
 
 //media query break point
 $break-median: 1024px;
-$break-small: 768px;
+$break-small: 820px;
 $break-mobile: 414px;
 
 //##     ##
@@ -213,14 +213,24 @@ a.active {
 .btn {
   text-decoration: none;
   padding: 15px 60px;
-  margin: 40px;
+  margin: 0;
+  display: inline-block;
 }
 .yellow-btn-stroke {
   color: $DD-yellow;
   border: 2px solid $DD-yellow;
+  @media screen and (max-width: $break-small) {
+    width: 100%;
+  }
 }
 
 .pink-btn-stroke {
   color: $DD-pink;
   border: 2px solid $DD-pink;
+  margin-left: 40px;
+  @media screen and (max-width: $break-small) {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
 }
