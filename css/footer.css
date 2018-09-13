@@ -6,8 +6,7 @@ body {
   line-height: 1.5;
   color: #fff;
   margin: 0;
-  padding: 0;
-  overflow: hidden; }
+  padding: 0; }
 
 a,
 p,
@@ -84,11 +83,13 @@ section {
   width: 80px; }
 
 .d-header {
+  width: 100%;
   background-color: transparent;
   position: fixed;
   top: 0;
   z-index: 500;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 50px 90px; }
 
 .header-logo {
   margin: 0;
@@ -112,7 +113,7 @@ video {
   transition: all 0.3s ease-in-out; }
 
 nav.menu {
-  display: inline-block;
+  float: right;
   width: 60%; }
 
 .main-menu ul {
