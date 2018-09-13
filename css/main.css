@@ -113,7 +113,8 @@ video {
   transition: all 0.3s ease-in-out; }
 
 nav.menu {
-  float: right; }
+  float: right;
+  width: 60%; }
 
 .main-menu ul {
   list-style: none; }
@@ -127,7 +128,7 @@ nav.menu {
   font-size: 14px;
   color: #fff;
   padding: 10px 0px;
-  margin-right: 0;
+  margin-right: calc(18% - 50px);
   position: relative;
   text-decoration: none; }
 

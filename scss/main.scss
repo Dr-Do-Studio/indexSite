@@ -147,6 +147,7 @@ video {
 
 nav.menu {
   float: right;
+  width: 60%;
 }
 
 .main-menu ul {
@@ -163,7 +164,7 @@ nav.menu {
   font-size: 14px;
   color: $DD-white;
   padding: 10px 0px;
-  margin-right: 0;
+  margin-right: calc(18% - 50px);
   position: relative;
   text-decoration: none;
   @media screen and (max-width: $break-small) {

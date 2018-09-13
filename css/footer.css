@@ -6,7 +6,8 @@ body {
   line-height: 1.5;
   color: #fff;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  overflow: hidden; }
 
 a,
 p,
@@ -53,6 +54,7 @@ h2 {
   text-align: center; }
 
 h3 {
+  text-align: center;
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
@@ -63,10 +65,14 @@ h3 {
   margin-left: 6px; }
 
 h1 {
+  text-align: center;
   font-size: 3rem;
   line-height: 1.5;
   margin-top: 0;
   color: #fff; }
+
+section {
+  padding: 40px; }
 
 .header-logo a {
   display: block;
@@ -78,13 +84,11 @@ h1 {
   width: 80px; }
 
 .d-header {
-  width: 100%;
   background-color: transparent;
   position: fixed;
   top: 0;
   z-index: 500;
-  overflow: hidden;
-  padding: 50px 90px; }
+  overflow: hidden; }
 
 .header-logo {
   margin: 0;
@@ -108,7 +112,8 @@ video {
   transition: all 0.3s ease-in-out; }
 
 nav.menu {
-  float: right; }
+  display: inline-block;
+  width: 60%; }
 
 .main-menu ul {
   list-style: none; }
@@ -122,7 +127,7 @@ nav.menu {
   font-size: 14px;
   color: #fff;
   padding: 10px 0px;
-  margin-right: 80px;
+  margin-right: calc(18% - 50px);
   position: relative;
   text-decoration: none; }
 
@@ -132,18 +137,40 @@ nav.menu {
 a.active {
   border-bottom: 2px solid #ffcc1e; }
 
-/*
-nav a:hover {
-  border-bottom: 2px solid $DD-pink;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-*/
-a.btn.btn-stroke {
+.button-container {
+  text-align: center;
+  padding: 30px;
+  margin-top: 40px; }
+
+.btn {
   text-decoration: none;
+  padding: 15px 60px;
+  margin: 40px; }
+
+.yellow-btn-stroke {
   color: #ffcc1e;
-  border: 2px solid #ffcc1e;
-  padding: 15px 60px; }
+  border: 2px solid #ffcc1e; }
+
+.pink-btn-stroke {
+  color: #fb2366;
+  border: 2px solid #fb2366; }
+
+a,
+a::after {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+a.btn::before,
+a.btn::after {
+  background: #fff;
+  content: "";
+  position: absolute;
+  z-index: -1; }
+
+.btn {
+  overflow: hidden; }
 
 .btn::after {
   height: 100%;
@@ -154,7 +181,7 @@ a.btn.btn-stroke {
   transform-origin: top left;
   width: 0; }
 
-.btn-5:hover:after {
+.btn:hover:after {
   height: 100%;
   width: 135%; }
 
