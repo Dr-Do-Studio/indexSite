@@ -1,16 +1,35 @@
-@import "main";
+//Theme color
+$DD-yellow: #ffcc1e;
+$DD-pink: #fb2366;
+$DD-blue: #003f87;
+$DD-green: #47d6c1;
+$DD-black: #000;
+$DD-white: #fff;
+
+//media query break point
+$break-median: 1024px;
+$break-small: 820px;
+$break-mobile: 414px;
+
 footer#footer {
   position: absolute;
   background: $DD-black;
   width: 100%;
-  height: 440px;
+  padding: 30px;
+  overflow: hidden;
 }
 
 .footer-logo {
   width: 30%;
   float: right;
-  margin-right: 43px;
-  margin-top: 100px;
+  margin-right: 10%;
+  margin-top: -59px;
+  @media screen and (max-width: $break-median) {
+    margin-top: -50px;
+  }
+  @media screen and (max-width: $break-small) {
+    display: none;
+  }
 }
 .footer-logo img {
   float: right;
@@ -22,10 +41,12 @@ footer#footer {
   text-align: right;
 }
 
+.footer-content {
+  margin-top: 140px;
+}
 .footer-content ul {
   list-style: none;
   display: inline-block;
-  margin-top: 140px;
   font-size: 20px;
 }
 .footer-content ul li a:hover {
@@ -34,11 +55,16 @@ footer#footer {
 
 .footer-content-left {
   float: left;
+  width: 50%;
+  @media screen and (max-width: $break-median) {
+  }
 }
 
 .footer-content-right {
-  float: right;
-  margin-right: 190px;
+  float: left;
+  width: 50%;
+  @media screen and (max-width: $break-median) {
+  }
 }
 
 .copyright p {
@@ -47,11 +73,32 @@ footer#footer {
 }
 
 .footer-content {
-  width: 100%;
+  width: 50%;
+  @media screen and (max-width: $break-median) {
+    margin-top: 100px;
+  }
+
+  @media screen and (max-width: $break-small) {
+    width: 100%;
+    margin-top: 30px;
+  }
 }
 .copyright p {
   display: inline-block;
   width: 100%;
   text-align: center;
   font-size: 15px;
+}
+
+.footer-content-line {
+  display: block;
+  width: 2px;
+  height: 19.2rem;
+  background-color: #f8ce41;
+  position: absolute;
+  right: 10%;
+  top: 0;
+  @media screen and (max-width: $break-small) {
+    display: none;
+  }
 }

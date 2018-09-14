@@ -87,6 +87,9 @@ h3 {
   margin-top: 0;
   margin-bottom: 1.2rem;
   margin-left: 6px;
+  @media screen and (max-width: $break-mobile) {
+    font-size: 0.6rem;
+  }
 }
 h1 {
   text-align: center;
@@ -96,6 +99,9 @@ h1 {
   color: $DD-white;
   @media screen and (max-width: $break-small) {
     font-size: 2rem;
+  }
+  @media screen and (max-width: $break-mobile) {
+    font-size: 1.3rem;
   }
 }
 
@@ -135,8 +141,9 @@ a::after {
   top: 0;
   z-index: 500;
   overflow: hidden;
-  padding: 74px 90px; }
-  
+  padding: 74px 90px;
+}
+
 .header-logo {
   margin: 0;
   padding: 0;
@@ -284,4 +291,38 @@ a.pink-btn-stroke::after {
 .btn:hover:after {
   height: 100%;
   width: 138%;
+}
+
+//animated fade in
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(80px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
 }

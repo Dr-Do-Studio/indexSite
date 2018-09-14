@@ -74,6 +74,9 @@ section.d-home {
   padding-top: 12rem;
   position: relative;
   width: 100%;
+  @media screen and (max-width: $break-small) {
+    padding-top: 9rem;
+  }
 }
 .home-content-p2 {
   padding-top: 8rem;
@@ -98,18 +101,6 @@ section.d-home {
   background-color: #000;
   position: absolute;
   right: 10%;
-  top: 0;
-  @media screen and (max-width: $break-small) {
-    display: none;
-  }
-}
-.footer-content-line {
-  display: block;
-  width: 2px;
-  height: 19.2rem;
-  background-color: #f8ce41;
-  position: absolute;
-  right: 7.2rem;
   top: 0;
   @media screen and (max-width: $break-small) {
     display: none;
