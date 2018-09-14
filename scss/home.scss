@@ -5,6 +5,9 @@ $DD-blue: #003f87;
 $DD-green: #47d6c1;
 $DD-black: #000;
 $DD-white: #fff;
+$break-median: 1024px;
+$break-small: 820px;
+$break-mobile: 414px;
 
 //##      ##  ##########  ##          ##  ###########
 //##      ##  ##      ##  ####      ####  ##
@@ -59,7 +62,7 @@ div.hero-bg img {
   background-color: #fff;
 }
 
-section#home {
+section.d-home {
   width: 100%;
   height: 100%;
   min-height: 786px;
@@ -82,8 +85,11 @@ section#home {
   height: 8.2rem;
   background-color: #f8ce41;
   position: absolute;
-  right: 7.2rem;
+  right: 10%;
   bottom: 0;
+  @media screen and (max-width: $break-small) {
+    display: none;
+  }
 }
 .p2-content-line {
   display: block;
@@ -91,8 +97,11 @@ section#home {
   height: 8.2rem;
   background-color: #000;
   position: absolute;
-  right: 7.2rem;
+  right: 10%;
   top: 0;
+  @media screen and (max-width: $break-small) {
+    display: none;
+  }
 }
 .footer-content-line {
   display: block;
@@ -102,6 +111,9 @@ section#home {
   position: absolute;
   right: 7.2rem;
   top: 0;
+  @media screen and (max-width: $break-small) {
+    display: none;
+  }
 }
 
 .intro-bottom-line:after {
@@ -188,4 +200,37 @@ section.d-home {
 
 .home-content {
   padding: 50px 90px;
+}
+
+//Scroll indicator
+.scroll-indicator {
+  width: 30px;
+  height: 30px;
+  border: 3px solid;
+  border-radius: 45px;
+  color: $DD-yellow;
+  animation-duration: 2s;
+  animation-name: fade;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  right: 15%;
+  position: absolute;
+  bottom: 100px;
+  cursor: pointer;
+}
+
+@keyframes fade {
+  0% {
+    transform: rotate(45deg);
+    opacity: 1;
+  }
+
+  75% {
+    transform: rotate(45deg) translateY(24px / -4) translateX(24px / -4);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }

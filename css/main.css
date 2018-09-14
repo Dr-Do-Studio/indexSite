@@ -188,4 +188,38 @@ a.active {
       margin-top: 10px;
       width: 100%; } }
 
+a.btn {
+  position: relative;
+  z-index: 1;
+  overflow: hidden; }
+
+a.btn:hover {
+  color: #000; }
+
+a.btn::before,
+a.btn::after {
+  content: "";
+  position: absolute;
+  z-index: -1; }
+
+a.yellow-btn-stroke::before,
+a.yellow-btn-stroke::after {
+  background: #ffcc1e; }
+
+a.pink-btn-stroke::before,
+a.pink-btn-stroke::after {
+  background: #fb2366; }
+
+.btn::after {
+  left: -38%;
+  top: 0;
+  transform: skew(50deg);
+  transition-duration: 0.6s;
+  transform-origin: top left;
+  width: 0; }
+
+.btn:hover:after {
+  height: 100%;
+  width: 138%; }
+
 /*# sourceMappingURL=main.css.map */
