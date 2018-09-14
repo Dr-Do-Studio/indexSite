@@ -21,7 +21,7 @@ $break-mobile: 414px;
 body {
   background: $DD-black;
   font-family: "Cabin", sans-serif;
-  font-size: 1.7rem;
+  font-size: 2vw;
   font-style: normal;
   line-height: 1.5;
   color: $DD-white;
@@ -64,9 +64,14 @@ div {
   max-width: 1200px;
   margin: 0 auto;
 }
+section#home,
+section#home-P2,
+section#home-P3 {
+  min-height: 700px;
+}
 
 h2 {
-  font-size: 2rem;
+  font-size: 2vw;
   color: $DD-black;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
@@ -79,7 +84,7 @@ h2 {
 
 h3 {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1vw;
   color: rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
   letter-spacing: 0.3rem;
@@ -87,22 +92,13 @@ h3 {
   margin-top: 0;
   margin-bottom: 1.2rem;
   margin-left: 6px;
-  @media screen and (max-width: $break-mobile) {
-    font-size: 0.6rem;
-  }
 }
 h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 3vw;
   line-height: 1.5;
   margin-top: 0;
   color: $DD-white;
-  @media screen and (max-width: $break-small) {
-    font-size: 2rem;
-  }
-  @media screen and (max-width: $break-mobile) {
-    font-size: 1.3rem;
-  }
 }
 
 a,
@@ -228,6 +224,9 @@ a.active {
   text-align: center;
   padding: 30px;
   margin-top: 40px;
+  @media screen and (max-width: $break-small) {
+    margin-top: 0;
+  }
 }
 
 .btn {
