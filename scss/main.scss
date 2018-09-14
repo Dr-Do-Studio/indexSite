@@ -127,6 +127,16 @@ a::after {
   overflow: hidden;
   padding: 50px 90px;
 }
+
+.d-header-background {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  z-index: 500;
+  overflow: hidden;
+  padding: 74px 90px; }
+  
 .header-logo {
   margin: 0;
   padding: 0;
