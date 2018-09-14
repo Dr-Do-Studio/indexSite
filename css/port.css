@@ -1,26 +1,11 @@
-//Theme color
-$DD-yellow: #ffcc1e;
-$DD-pink: #fb2366;
-$DD-blue: #003f87;
-$DD-green: #47d6c1;
-$DD-black: #000;
-$DD-white: #fff;
-
-$break-median: 1024px;
-$break-small: 820px;
-$break-mobile: 414px;
-
-//P1
 section#port {
   background-image: url(../imgs/Port-P1.jpg);
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 150%;
-}
+  background-size: 150%; }
 
 section#port {
-  padding-top: 15rem;
-}
+  padding-top: 15rem; }
 
 .d-home .overlay {
   position: absolute;
@@ -29,12 +14,10 @@ section#port {
   width: 100%;
   height: 100%;
   opacity: 0.8;
-  background-color: #000000;
-}
+  background-color: #000000; }
 
 section#port h1 {
-  font-size: 5vw;
-}
+  font-size: 5vw; }
 
 .scroll-indicator {
   height: 70px;
@@ -49,45 +32,32 @@ section#port h1 {
   animation-timing-function: linear;
   position: absolute;
   bottom: 100px;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 @keyframes fade {
   0% {
-    background-size: 50px;
-  }
-
+    background-size: 50px; }
   75% {
-    background-size: 60px;
-  }
-
+    background-size: 60px; }
   100% {
-    background-size: 50px;
-  }
-}
-
+    background-size: 50px; } }
 .home-content-main {
-  text-align: center;
-}
+  text-align: center; }
 
 .love {
   font-size: 6vw;
   animation-duration: 3s;
   animation-name: change;
-  animation-iteration-count: infinite;
-}
+  animation-iteration-count: infinite; }
 
 @keyframes change {
   0% {
-    color: $DD-yellow;
-  }
+    color: #ffcc1e; }
   25% {
-    color: $DD-blue;
-  }
+    color: #003f87; }
   50% {
-    color: $DD-green;
-  }
+    color: #47d6c1; }
   75% {
-    color: $DD-pink;
-  }
-}
+    color: #fb2366; } }
+
+/*# sourceMappingURL=port.css.map */
