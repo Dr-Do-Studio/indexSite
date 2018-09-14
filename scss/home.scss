@@ -20,7 +20,6 @@ $break-mobile: 414px;
 
 p.section-content {
   color: black;
-  font-size: 1.5rem;
   text-align: center;
   width: 80%;
   margin: 0 auto;
@@ -70,15 +69,8 @@ section.d-home {
   overflow: hidden;
 }
 .home-content-main {
-  padding-top: 12rem;
   position: relative;
   width: 100%;
-  @media screen and (max-width: $break-small) {
-    padding-top: 9rem;
-  }
-}
-.home-content-p2 {
-  padding-top: 8rem;
 }
 
 .home-content-line {
@@ -106,18 +98,6 @@ section.d-home {
   }
 }
 
-.intro-bottom-line:after {
-  content: "";
-  display: inline-block;
-  height: 4px;
-  width: 12%;
-  background-color: black;
-  position: absolute;
-  margin-top: 3.5rem;
-  top: 60%;
-  left: 44%;
-}
-
 .home-content-p3 h2:after {
   background-color: white;
 }
@@ -142,6 +122,12 @@ section#home {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 150%;
+  @media screen and (max-width: $break-small) {
+    background-size: 200%;
+  }
+  @media screen and (max-width: $break-small) {
+    background-size: 300%;
+  }
 }
 
 .home-content {
@@ -188,17 +174,35 @@ section#home {
   }
 }
 
+//P1
+h3.intro {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+section#home {
+  padding-top: 9rem;
+}
+
+//P2
+
+section#home-P2 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 //P3
 
 .d-home-black {
   background: $DD-blue;
-}
-.home-content-p3 {
-  padding-top: 8rem;
 }
 
 .home-content-p3 h2 {
   color: #fff;
   padding: 50px;
   padding-top: 20px;
+}
+section#home-P3 {
+  padding-bottom: 4rem;
+  padding-top: 4rem;
 }
