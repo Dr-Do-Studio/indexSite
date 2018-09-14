@@ -128,17 +128,6 @@ section.d-home {
   left: 44%;
 }
 
-div.carousel-indicators img {
-  width: 20%;
-}
-
-.carousel-indicators {
-  text-align: center;
-  display: inline-block;
-  width: 100%;
-  padding-top: 80px;
-}
-
 .home-content-p3 h2:after {
   background-color: white;
 }
@@ -147,39 +136,6 @@ div.carousel-indicators img {
   text-transform: uppercase;
   color: $DD-yellow;
   text-align: center;
-}
-
-.web,
-.mobile,
-.other {
-  cursor: pointer;
-  float: left;
-}
-.web .web-dev-icon-1,
-.mobile .mobile-dev-icon-1,
-.other .other-dev-icon-1 {
-  width: 20%;
-}
-.web .web-dev-icon-2,
-.mobile .mobile-dev-icon-2,
-.other .other-dev-icon-2 {
-  display: none;
-}
-.web:hover .web-dev-icon-2,
-.mobile:hover .mobile-dev-icon-2,
-.other:hover .other-dev-icon-2 {
-  display: block;
-  width: 20%;
-}
-.web:hover .web-dev-icon-1,
-.mobile:hover .mobile-dev-icon-1,
-.other:hover .other-dev-icon-1 {
-  display: none;
-}
-img.web-dev-icon-2,
-img.mobile-dev-icon-2,
-img.other-dev-icon-2 {
-  margin: 0 auto;
 }
 
 span.dot img {
@@ -191,7 +147,7 @@ span.dot {
 }
 
 //Part 1
-section.d-home {
+section#home {
   background-image: url(../imgs/Home-P1.jpg);
   background-repeat: no-repeat;
   background-position: top center;
@@ -217,6 +173,10 @@ section.d-home {
   position: absolute;
   bottom: 100px;
   cursor: pointer;
+  @media screen and (max-width: $break-small) {
+    display: none;
+    animation: none;
+  }
 }
 
 @keyframes fade {
@@ -233,4 +193,19 @@ section.d-home {
   100% {
     opacity: 0;
   }
+}
+
+//P3
+
+.d-home-black {
+  background: $DD-blue;
+}
+.home-content-p3 {
+  padding-top: 8rem;
+}
+
+.home-content-p3 h2 {
+  color: #fff;
+  padding: 50px;
+  padding-top: 20px;
 }

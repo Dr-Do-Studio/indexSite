@@ -103,15 +103,6 @@ section.d-home {
   top: 60%;
   left: 44%; }
 
-div.carousel-indicators img {
-  width: 20%; }
-
-.carousel-indicators {
-  text-align: center;
-  display: inline-block;
-  width: 100%;
-  padding-top: 80px; }
-
 .home-content-p3 h2:after {
   background-color: white; }
 
@@ -120,45 +111,13 @@ div.carousel-indicators img {
   color: #ffcc1e;
   text-align: center; }
 
-.web,
-.mobile,
-.other {
-  cursor: pointer;
-  float: left; }
-
-.web .web-dev-icon-1,
-.mobile .mobile-dev-icon-1,
-.other .other-dev-icon-1 {
-  width: 20%; }
-
-.web .web-dev-icon-2,
-.mobile .mobile-dev-icon-2,
-.other .other-dev-icon-2 {
-  display: none; }
-
-.web:hover .web-dev-icon-2,
-.mobile:hover .mobile-dev-icon-2,
-.other:hover .other-dev-icon-2 {
-  display: block;
-  width: 20%; }
-
-.web:hover .web-dev-icon-1,
-.mobile:hover .mobile-dev-icon-1,
-.other:hover .other-dev-icon-1 {
-  display: none; }
-
-img.web-dev-icon-2,
-img.mobile-dev-icon-2,
-img.other-dev-icon-2 {
-  margin: 0 auto; }
-
 span.dot img {
   width: 100% !important; }
 
 span.dot {
   margin-right: 10%; }
 
-section.d-home {
+section#home {
   background-image: url(../imgs/Home-P1.jpg);
   background-repeat: no-repeat;
   background-position: top center;
@@ -181,6 +140,10 @@ section.d-home {
   position: absolute;
   bottom: 100px;
   cursor: pointer; }
+  @media screen and (max-width: 820px) {
+    .scroll-indicator {
+      display: none;
+      animation: none; } }
 
 @keyframes fade {
   0% {
@@ -191,5 +154,15 @@ section.d-home {
     opacity: 0; }
   100% {
     opacity: 0; } }
+.d-home-black {
+  background: #003f87; }
+
+.home-content-p3 {
+  padding-top: 8rem; }
+
+.home-content-p3 h2 {
+  color: #fff;
+  padding: 50px;
+  padding-top: 20px; }
 
 /*# sourceMappingURL=home.css.map */
