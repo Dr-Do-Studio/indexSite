@@ -16,6 +16,12 @@ section#port {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 120%;
+  @media screen and (max-width: $break-small) {
+    background-size: 200%;
+  }
+  @media screen and (max-width: $break-small) {
+    background-size: 300%;
+  }
 }
 
 section#port {
@@ -27,7 +33,7 @@ section#port {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 94%;
   opacity: 0.7;
   background-color: #000000;
 }
@@ -38,7 +44,7 @@ section#port h1 {
 
 .scroll-indicator {
   height: 70px;
-  width: 70px;
+  width: 20%;
   background-image: url(../imgs/heart.png);
   background-position: center;
   background-size: 70px;
@@ -48,8 +54,9 @@ section#port h1 {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   position: absolute;
-  top: 400px;
+  top: 500px;
   cursor: pointer;
+  left: 40%;
 }
 
 @keyframes fade {
@@ -97,10 +104,33 @@ section#port-P2 {
   color: black;
   background: white;
 }
-//P3
 
-//P4
+.proj-img {
+  width: 40%;
+  float: left;
+  text-align: center;
+}
 
-//P5
+.proj-intro {
+  width: 40%;
+  float: right;
+}
 
-//P6
+section.d-port {
+  padding: 30px;
+}
+
+.proj-img img {
+  width: 80%;
+}
+
+section#port-P4 {
+  background: #fff;
+  color: black;
+}
+
+#port-P3 .proj-img {
+  width: 40%;
+  float: right;
+  text-align: center;
+}
