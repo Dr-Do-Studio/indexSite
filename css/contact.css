@@ -6,11 +6,11 @@
   margin-bottom: 60px; }
 
 section#contact {
-  text-align: center; }
+  text-align: center;
+  background: #000000cc; }
 
 form.contact-form {
   width: 60%;
-  background-color: #1b1b1b;
   display: inline-block;
   float: left;
   height: 600px;
@@ -26,7 +26,6 @@ form.contact-form {
   width: 40%;
   float: left;
   height: 600px;
-  background: #000;
   padding: 60px 60px;
   text-align: left; }
 
@@ -111,5 +110,30 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #fb2366; }
+
+.star-bg,
+.plane-bg,
+.as-bg {
+  position: absolute;
+  top: 0px; }
+
+.star-bg {
+  z-index: -1;
+  width: 100%;
+  margin: auto 0;
+  left: 220px;
+  top: 30px; }
+
+.plane-bg {
+  z-index: -1;
+  width: 100%;
+  margin: auto 0;
+  top: 70px; }
+
+.as-bg {
+  z-index: -1;
+  width: 100%;
+  margin: auto 0;
+  top: 240px; }
 
 /*# sourceMappingURL=contact.css.map */
