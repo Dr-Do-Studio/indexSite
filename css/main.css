@@ -50,7 +50,7 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   position: relative;
-  margin-top: 25px;
+  margin-top: 0;
   margin-bottom: 1.2rem;
   margin-left: 6px;
   text-align: center; }
@@ -216,26 +216,26 @@ a.active {
       margin-top: 10px;
       width: 100%; } }
 
-a.btn {
+.btn {
   position: relative;
   z-index: 1;
   overflow: hidden; }
 
-a.btn:hover {
+.btn:hover {
   color: #000; }
 
-a.btn::before,
-a.btn::after {
+.btn::before,
+.btn::after {
   content: "";
   position: absolute;
   z-index: -1; }
 
-a.yellow-btn-stroke::before,
-a.yellow-btn-stroke::after {
+.yellow-btn-stroke::before,
+.yellow-btn-stroke::after {
   background: #ffcc1e; }
 
-a.pink-btn-stroke::before,
-a.pink-btn-stroke::after {
+.pink-btn-stroke::before,
+.pink-btn-stroke::after {
   background: #fb2366; }
 
 .btn::after {

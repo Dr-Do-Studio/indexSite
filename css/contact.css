@@ -1,22 +1,12 @@
-//Theme color
-$DD-yellow: #ffcc1e;
-$DD-pink: #fb2366;
-$DD-blue: #003f87;
-$DD-green: #47d6c1;
-$DD-black: #000;
-$DD-white: #fff;
-
 .contact-section {
   width: 70%;
   margin: 0 auto;
   margin-top: 15%;
   overflow: hidden;
-  margin-bottom: 60px;
-}
+  margin-bottom: 60px; }
 
 section#contact {
-  text-align: center;
-}
+  text-align: center; }
 
 form.contact-form {
   width: 60%;
@@ -25,14 +15,12 @@ form.contact-form {
   float: left;
   height: 600px;
   padding: 60px 60px;
-  text-align: left;
-  div {
+  text-align: left; }
+  form.contact-form div {
     margin-top: 20px;
     width: 100%;
     margin: 40px 0;
-    position: relative;
-  }
-}
+    position: relative; }
 
 .contact-info {
   width: 40%;
@@ -40,32 +28,27 @@ form.contact-form {
   height: 600px;
   background: #000;
   padding: 60px 60px;
-  text-align: left;
-}
+  text-align: left; }
 
 p.under-header {
-  margin-bottom: 30px;
-}
+  margin-bottom: 30px; }
 
 p.contact-header {
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 .info-section {
   margin-top: 30px;
-  margin-bottom: 60px;
-}
+  margin-bottom: 60px; }
 
 p.info-section-header {
   text-transform: uppercase;
   margin-bottom: 10px;
-  color: $DD-yellow;
-}
+  color: #ffcc1e; }
+
 .typing {
   border: 0;
   padding: 7px 0;
-  border-bottom: 1px solid #ccc;
-}
+  border-bottom: 1px solid #ccc; }
 
 .typing ~ .focus-border {
   position: absolute;
@@ -73,13 +56,12 @@ p.info-section-header {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: $DD-yellow;
-  transition: 0.4s;
-}
+  background-color: #ffcc1e;
+  transition: 0.4s; }
+
 .typing:focus ~ .focus-border {
   width: 100%;
-  transition: 0.4s;
-}
+  transition: 0.4s; }
 
 input[type="text"],
 textarea {
@@ -90,50 +72,44 @@ textarea {
   background: none;
   font-size: 15px;
   line-height: 2;
-  resize: none;
-}
+  resize: none; }
 
 textarea:focus,
 input:focus {
-  outline: none;
-}
+  outline: none; }
+
 textarea.typing {
-  height: 140px;
-}
+  height: 140px; }
 
 .contact-message .typing ~ .focus-border {
-  bottom: 10px;
-}
-div.contact-message {
-  .typing ~ label {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    top: 9px;
-    color: #aaa;
-    transition: 0.3s;
-    font-size: 15px;
-    letter-spacing: 1px;
-    margin-left: 1px;
-  }
-  .typing:focus ~ label,
-  .has-content.typing ~ label {
-    top: -16px;
-    font-size: 12px;
-    color: $DD-yellow;
-    transition: 0.3s;
-  }
-}
+  bottom: 10px; }
+
+div.contact-message .typing ~ label {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 9px;
+  color: #aaa;
+  transition: 0.3s;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-left: 1px; }
+div.contact-message .typing:focus ~ label,
+div.contact-message .has-content.typing ~ label {
+  top: -16px;
+  font-size: 12px;
+  color: #ffcc1e;
+  transition: 0.3s; }
 
 input[type="submit"] {
-  background-color: $DD-yellow;
-  color: $DD-black;
+  background-color: #ffcc1e;
+  color: #000;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
-  width: 100%;
-}
+  width: 100%; }
 
 input[type="submit"]:hover {
-  background-color: $DD-pink;
-}
+  background-color: #fb2366; }
+
+/*# sourceMappingURL=contact.css.map */
