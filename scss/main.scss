@@ -278,7 +278,7 @@ a.active {
 .yellow-btn-stroke {
   color: $DD-yellow;
   border: 2px solid $DD-yellow;
-  @media screen and (max-width: $break-mobile) {
+  @media screen and (max-width: 715px) {
     width: 100%;
   }
 }
@@ -287,7 +287,7 @@ a.active {
   color: $DD-pink;
   border: 2px solid $DD-pink;
   margin-left: 40px;
-  @media screen and (max-width: $break-mobile) {
+  @media screen and (max-width: 715px) {
     margin-left: 0;
     margin-top: 10px;
     width: 100%;

@@ -225,7 +225,7 @@ a.active {
 .yellow-btn-stroke {
   color: #ffcc1e;
   border: 2px solid #ffcc1e; }
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 715px) {
     .yellow-btn-stroke {
       width: 100%; } }
 
@@ -233,7 +233,7 @@ a.active {
   color: #fb2366;
   border: 2px solid #fb2366;
   margin-left: 40px; }
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 715px) {
     .pink-btn-stroke {
       margin-left: 0;
       margin-top: 10px;
