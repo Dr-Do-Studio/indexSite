@@ -141,7 +141,9 @@ video {
 
 nav.menu {
   float: right;
-  width: 60%; }
+  width: 60%;
+  margin-top: 4px;
+  margin-right: -100px; }
 
 .main-menu ul {
   list-style: none; }
@@ -277,5 +279,95 @@ a.active {
 .copyright {
   margin-top: 30px;
   display: inline-block; }
+
+@media screen and (max-width: 820px) {
+  nav.menu {
+    display: none; } }
+
+.hamburger-menu {
+  float: right;
+  display: none;
+  width: 55px;
+  height: 40px;
+  align-self: center;
+  cursor: pointer;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  margin-top: 6px;
+  margin-right: -40px; }
+  @media screen and (max-width: 820px) {
+    .hamburger-menu div {
+      height: 5px;
+      background: white;
+      border-radius: 50px;
+      align-self: flex-end; }
+    .hamburger-menu .top {
+      width: 84%; }
+    .hamburger-menu .meat {
+      width: 100%;
+      transition: all 200ms ease-in-out; }
+    .hamburger-menu .bottom {
+      width: 63%;
+      transition: all 400ms ease-in-out; }
+    .hamburger-menu:hover div {
+      background: yellow; }
+    .hamburger-menu:hover .top {
+      animation: burger-hover 1s infinite ease-in-out alternate; }
+    .hamburger-menu:hover .meat {
+      animation: burger-hover 1s infinite ease-in-out alternate forwards 200ms; }
+    .hamburger-menu:hover .bottom {
+      animation: burger-hover 1s infinite ease-in-out alternate forwards 400ms; }
+    @keyframes burger-hover {
+      0% {
+        width: 100%; }
+      50% {
+        width: 50%; }
+      100% {
+        width: 100%; } } }
+
+.hamburger-content {
+  opacity: 0; }
+
+@media screen and (max-width: 820px) {
+  .hamburger-content-show {
+    background: #003f87;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    text-align: center;
+    padding-top: 200px;
+    opacity: 1; }
+
+  .hamburger-content-show a {
+    width: 100%;
+    display: block;
+    height: 20%;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 40px; }
+
+  .hamburger-content-show a:hover {
+    background: yellow;
+    color: blue; }
+
+  .active-menu-icon .meat {
+    display: none;
+    animation: none;
+    transition: none; }
+  .active-menu-icon .top {
+    transform: rotate(45deg);
+    margin-top: 20px;
+    width: 100%;
+    animation: none;
+    transition: none; }
+  .active-menu-icon .bottom {
+    transform: rotate(-45deg);
+    margin-bottom: 10px;
+    width: 100%;
+    animation: none;
+    transition: none; } }
 
 /*# sourceMappingURL=main.css.map */
