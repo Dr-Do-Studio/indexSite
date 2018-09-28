@@ -96,7 +96,7 @@ section#home {
   @media screen and (max-width: 820px) {
     section#home {
       background-size: 200%; } }
-  @media screen and (max-width: 820px) {
+  @media screen and (max-width: 414px) {
     section#home {
       background-size: 300%; } }
 

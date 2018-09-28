@@ -126,7 +126,7 @@ section#home {
   @media screen and (max-width: $break-small) {
     background-size: 200%;
   }
-  @media screen and (max-width: $break-small) {
+  @media screen and (max-width: $break-mobile) {
     background-size: 300%;
   }
 }

@@ -65,6 +65,12 @@ h3 {
   margin-top: 0;
   margin-bottom: 1.2rem;
   margin-left: 6px; }
+  @media screen and (max-width: 820px) {
+    h3 {
+      font-size: 1.3em; } }
+  @media screen and (max-width: 414px) {
+    h3 {
+      font-size: 2em; } }
 
 h1 {
   text-align: center;
@@ -72,6 +78,12 @@ h1 {
   line-height: 1.5;
   margin-top: 0;
   color: #fff; }
+  @media screen and (max-width: 820px) {
+    h1 {
+      font-size: 2.6em; } }
+  @media screen and (max-width: 414px) {
+    h1 {
+      font-size: 3em; } }
 
 a,
 a::after {
@@ -108,6 +120,9 @@ a::after {
   z-index: 500;
   overflow: hidden;
   padding: 50px 90px; }
+  @media screen and (max-width: 414px) {
+    .d-header {
+      padding-left: 51px; } }
 
 .d-header-background {
   width: 100%;
@@ -194,6 +209,12 @@ a.active {
     .button-container {
       margin-top: 0;
       padding: 30px 30px; } }
+  @media screen and (max-width: 820px) {
+    .button-container a {
+      font-size: 1.5em; } }
+  @media screen and (max-width: 414px) {
+    .button-container a {
+      font-size: 2em; } }
 
 .btn {
   text-decoration: none;
@@ -294,7 +315,7 @@ a.active {
   justify-content: space-between;
   display: flex;
   flex-direction: column;
-  margin-top: 6px;
+  margin-top: 9px;
   margin-right: -40px; }
   @media screen and (max-width: 820px) {
     .hamburger-menu div {
