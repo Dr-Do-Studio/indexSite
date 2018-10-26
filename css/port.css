@@ -73,6 +73,9 @@ section#port-P2 {
   width: 50%;
   float: right;
   margin-top: 30px; }
+  @media screen and (max-width: 414px) {
+    .proj-intro {
+      width: 100%; } }
 
 section.d-port {
   padding: 30px; }
@@ -94,9 +97,6 @@ section#port-P4 {
   bottom: -361px;
   width: 250px;
   margin-left: 5%; }
-
-section#port-P2 {
-  min-height: 400px; }
 
 a.download-img img {
   width: 40%; }
