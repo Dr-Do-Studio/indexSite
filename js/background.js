@@ -32,10 +32,12 @@ moveBG();
 */
 
 $(document).scroll(function() {
-  var scroll_p = $(this).scrollTop();
-  $(".d-home").css({
-    "background-position-y": -scroll_p / 5
-  });
+  if (window.innerWidth >= 600) {
+    var scroll_p = $(this).scrollTop();
+    $(".d-home").css({
+      "background-position-y": -scroll_p / 5
+    });
+  }
 });
 
 var FollowX = 0,

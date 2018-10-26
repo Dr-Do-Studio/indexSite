@@ -70,8 +70,9 @@ section#port-P2 {
   text-align: center; }
 
 .proj-intro {
-  width: 40%;
-  float: right; }
+  width: 50%;
+  float: right;
+  margin-top: 30px; }
 
 section.d-port {
   padding: 30px; }
@@ -87,5 +88,24 @@ section#port-P4 {
   width: 40%;
   float: right;
   text-align: center; }
+
+.proj-img.port-1 {
+  position: absolute;
+  bottom: -361px;
+  width: 250px;
+  margin-left: 5%; }
+
+section#port-P2 {
+  min-height: 400px; }
+
+a.download-img img {
+  width: 40%; }
+
+p.proj-title {
+  font-size: 30px; }
+
+p.section-content {
+  margin-top: 20px;
+  margin-bottom: 40px; }
 
 /*# sourceMappingURL=port.css.map */
