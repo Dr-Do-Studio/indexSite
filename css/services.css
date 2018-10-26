@@ -1,3 +1,6 @@
+h2 {
+  font-size: 1.8em; }
+
 .cursor {
   display: block;
   position: absolute;
@@ -116,5 +119,8 @@ section#service {
 
 .block-content img {
   width: 30%; }
+
+.d-service-p2 img {
+  width: 100%; }
 
 /*# sourceMappingURL=services.css.map */

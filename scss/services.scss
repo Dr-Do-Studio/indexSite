@@ -9,7 +9,9 @@ $DD-white: #fff;
 $break-median: 1024px;
 $break-small: 820px;
 $break-mobile: 414px;
-
+h2 {
+  font-size: 1.8em;
+}
 .cursor {
   display: block;
   position: absolute;
@@ -144,4 +146,8 @@ section#service {
 
 .block-content img {
   width: 30%;
+}
+
+.d-service-p2 img {
+  width: 100%;
 }

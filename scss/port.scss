@@ -177,3 +177,19 @@ p.section-content {
 section#port-P5 {
   text-align: center;
 }
+
+.person-profile {
+  width: 26%;
+  padding: 40px;
+  background: #fff;
+  color: black;
+  margin: 30px;
+  float: left;
+  text-align: center;
+}
+
+.person-profile:hover {
+  background: black;
+  border: 2px solid #fff;
+  color: #fff;
+}

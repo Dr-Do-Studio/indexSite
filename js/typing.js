@@ -4,9 +4,7 @@ function autoType(elementClass, typingSpeed) {
     position: "relative",
     display: "inline-block"
   });
-  TypeContent.prepend(
-    '<div class="cursor" style="right: initial; left:0;"></div>'
-  );
+  TypeContent.prepend('<div class="cursor" style="right:0;"></div>');
   TypeContent = TypeContent.find(".text-js");
   var text = TypeContent.text()
     .trim()
