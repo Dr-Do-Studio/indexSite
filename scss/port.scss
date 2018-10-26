@@ -152,3 +152,28 @@ p.section-content {
   margin-top: 20px;
   margin-bottom: 40px;
 }
+.circle {
+  float: left;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 6%;
+  text-align: center;
+  padding-top: 57px;
+  font-size: 74px;
+}
+.circle-1 {
+  border: 6px solid $DD-blue;
+  color: $DD-blue;
+}
+.circle-2 {
+  border: 6px solid $DD-yellow;
+  color: $DD-yellow;
+}
+.circle-3 {
+  border: 6px solid $DD-pink;
+  color: $DD-pink;
+}
+section#port-P5 {
+  text-align: center;
+}

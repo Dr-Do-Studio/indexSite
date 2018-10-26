@@ -108,4 +108,29 @@ p.section-content {
   margin-top: 20px;
   margin-bottom: 40px; }
 
+.circle {
+  float: left;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 6%;
+  text-align: center;
+  padding-top: 57px;
+  font-size: 74px; }
+
+.circle-1 {
+  border: 6px solid #003f87;
+  color: #003f87; }
+
+.circle-2 {
+  border: 6px solid #ffcc1e;
+  color: #ffcc1e; }
+
+.circle-3 {
+  border: 6px solid #fb2366;
+  color: #fb2366; }
+
+section#port-P5 {
+  text-align: center; }
+
 /*# sourceMappingURL=port.css.map */
