@@ -167,16 +167,7 @@ a::after {
   @media screen and (max-width: $break-mobile) {
     padding-left: 51px;
   }
-}
-
-.d-header-background {
-  width: 100%;
-  background-color: transparent;
-  position: fixed;
-  top: 0;
-  z-index: 500;
-  overflow: hidden;
-  padding: 74px 90px;
+  height: 150px;
 }
 
 .header-logo {
@@ -457,12 +448,10 @@ nav.menu {
     }
   }
 }
-.hamburger-content {
-  opacity: 0;
-}
 @media screen and (max-width: $break-small) {
-  .hamburger-content-show {
-    background: #003f87;
+  nav.hamburger-content-show {
+    display: block;
+    background: $DD-blue;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -470,6 +459,9 @@ nav.menu {
     text-align: center;
     padding-top: 200px;
     opacity: 1;
+    margin: 0;
+    top: 0;
+    left: 0;
   }
 
   .hamburger-content-show a {
@@ -481,10 +473,32 @@ nav.menu {
     text-align: center;
     padding: 40px;
   }
+  nav a {
+    &:after {
+      display: none;
+    }
+    &:hover:after {
+      display: none;
+    }
+  }
 
-  .hamburger-content-show a:hover {
-    background: yellow;
-    color: blue;
+  .header-logo {
+    position: absolute;
+    z-index: 3;
+  }
+  .hamburger-menu {
+    position: absolute;
+    z-index: 3;
+    right: 90px;
+  }
+
+  .hamburger-content-show a:hover,
+  .active {
+    background: $DD-yellow;
+    color: $DD-blue;
+  }
+  .hamburger-content-show a.active {
+    color: $DD-blue;
   }
 
   .active-menu-icon {
@@ -495,16 +509,16 @@ nav.menu {
     }
     .top {
       transform: rotate(45deg);
-      margin-top: 20px;
+      margin-top: 17px;
       width: 100%;
-      animation: none;
+      animation: none !important;
       transition: none;
     }
     .bottom {
       transform: rotate(-45deg);
-      margin-bottom: 10px;
+      margin-bottom: 19px;
       width: 100%;
-      animation: none;
+      animation: none !important;
       transition: none;
     }
   }

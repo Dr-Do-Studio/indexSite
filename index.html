@@ -15,22 +15,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script src="js/scroll.js"></script>
-    <script src="js/slideshow.js"></script>
     <script src="js/background.js"></script>
+    <script src="js/main.js"></script>
 </head>
 
 <body id="top">
-
-    <div class="hamburger-content">
-        <a href="index.html">HOME</a>
-        <a href="portfolio.html">PORTFOLIO</a>
-        <a href="services.html">SERVICES</a>
-        <a href="contact.html">CONTACT</a>
-    </div>
-    <section id="home" class="d-home" data-parallax="scroll" data-image-src="imgs/Home-P1.jpg" data-natural-width="3000" data-natural-height="2000"
-        data-position-y="center">
-
-        <div class="d-header-background"></div>
+    <section id="home" class="d-home" data-parallax="scroll" data-image-src="imgs/Home-P1.jpg" data-natural-width="3000"
+        data-natural-height="2000" data-position-y="center">
 
         <header class="d-header">
             <div class="header-logo">
@@ -83,15 +74,17 @@
 
 
     </section>
-    <section id="home-P2" class="d-home d-home-yellow" data-parallax="scroll" background-color="yellow" data-natural-width="3000"
-        data-natural-height="2000" data-position-y="center">
+    <section id="home-P2" class="d-home d-home-yellow" data-parallax="scroll" background-color="yellow"
+        data-natural-width="3000" data-natural-height="2000" data-position-y="center">
         <div class="overlay"></div>
         <div class="home-content">
             <div class="row home-content-main home-content-p2">
                 <h2 class="intro-bottom-line">We are Dr. Do</h2>
                 <p class="section-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
 
                 </p>
             </div>
@@ -100,8 +93,8 @@
 
 
     </section>
-    <section id="home-P3" class="d-home d-home-black" data-parallax="scroll" background-color="yellow" data-natural-width="3000"
-        data-natural-height="2000" data-position-y="center">
+    <section id="home-P3" class="d-home d-home-black" data-parallax="scroll" background-color="yellow"
+        data-natural-width="3000" data-natural-height="2000" data-position-y="center">
         <div class="home-content">
             <div class="row home-content-main home-content-p3">
                 <p class="before-h2">What we do</p>
@@ -116,8 +109,8 @@
 
     </section>
 
-    <footer id="footer" class="footer" data-parallax="scroll" data-image-src="imgs/Home-P4.jpg" data-natural-width="3000" data-natural-height="2000"
-        data-position-y="center">
+    <footer id="footer" class="footer" data-parallax="scroll" data-image-src="imgs/Home-P4.jpg" data-natural-width="3000"
+        data-natural-height="2000" data-position-y="center">
         <div class="overlay"></div>
         <div class="row footer-main">
             <div class="footer-logo">
@@ -169,19 +162,10 @@
 
     </footer>
     <script>
-        $(".scroll-indicator").click(function () {
-            var href = $(this).attr("href");
-            var pos = $(href).offset().top;
-            $("html,body").animate({ scrollTop: pos }, 1000);
-            return false;
+        $("#toggleMenu").click(function () {
+            $(this).toggleClass("active-menu-icon");
+            $(".menu").toggleClass("hamburger-content-show");
         });
-
-        $("#toggleMenu").click(
-            function () {
-                $(this).toggleClass("active-menu-icon");
-                $(".hamburger-content").toggleClass("hamburger-content-show");
-            }
-        );
     </script>
 </body>
 
