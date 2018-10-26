@@ -22,13 +22,13 @@ img.hero-bg {
   background-image: url(../imgs/Ser-P1.png);
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 100%;
-  height: 768px; }
+  -webkit-background-size: cover; }
 
 .home-content-main {
   position: relative;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  padding-top: 200px; }
 
 .sub-container {
   padding-top: 20%; }
@@ -39,9 +39,12 @@ section.d-service-p2 {
   min-height: 400px; }
 
 section.d-service-p3 {
-  background: #cccccc0d;
-  padding: 10px;
-  height: 1200px; }
+  background: #cccccc6e;
+  padding: 10px; }
+  @media screen and (max-width: 414px) {
+    section.d-service-p3 {
+      min-height: auto;
+      overflow: hidden; } }
 
 .block {
   width: 31%;
@@ -50,45 +53,68 @@ section.d-service-p3 {
   height: auto;
   background: #fff;
   margin: 1%;
-  text-align: center; }
+  text-align: center;
+  padding: 34px;
+  min-height: 155px; }
+  @media screen and (max-width: 414px) {
+    .block {
+      width: 48%;
+      min-height: 130px; } }
 
-.block:before {
-  content: "";
-  display: block;
-  margin-top: 100%; }
-
-.block .block-content {
-  position: absolute; }
+@media screen and (max-width: 414px) {
+  .quote-block {
+    display: none; } }
 
 .block-1 {
   background: #fb2366; }
 
 .block-2 {
-  background: #fff; }
+  background: #fff;
+  color: #ffcc1e; }
 
 .block-3 {
   background: #47d6c1; }
 
 .block-4 {
-  background: #fff; }
+  background: #fff;
+  color: #003f87; }
 
 .block-5 {
   background: #003f87; }
 
 .block-6 {
-  background: #fff; }
+  background: #fff;
+  color: #47d6c1; }
 
 .block-7 {
   background: #47d6c1; }
+  @media screen and (max-width: 414px) {
+    .block-7 {
+      display: none; } }
 
 .block-8 {
-  background: #fff; }
+  background: #fff;
+  color: #fb2366; }
 
 .block-9 {
   background: #ffcc1e; }
 
 section.d-service-p4 {
   background: #003f87;
-  text-align: center; }
+  text-align: center;
+  padding: 50px; }
+  @media screen and (max-width: 414px) {
+    section.d-service-p4 {
+      min-height: auto;
+      overflow: hidden; } }
+
+section#service {
+  min-height: 770px; }
+  @media screen and (max-width: 414px) {
+    section#service {
+      min-height: 560px; } }
+
+.block-content img {
+  width: 30%; }
 
 /*# sourceMappingURL=services.css.map */

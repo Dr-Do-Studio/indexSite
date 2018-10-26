@@ -40,6 +40,7 @@ $(document).scroll(function() {
   }
 });
 
+/*
 var FollowX = 0,
   FollowY = 0,
   x = 0,
@@ -94,3 +95,4 @@ $(window).on("mousemove click", function(e) {
 });
 
 moveBG();
+*/

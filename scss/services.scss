@@ -6,6 +6,10 @@ $DD-green: #47d6c1;
 $DD-black: #000;
 $DD-white: #fff;
 
+$break-median: 1024px;
+$break-small: 820px;
+$break-mobile: 414px;
+
 .cursor {
   display: block;
   position: absolute;
@@ -35,14 +39,14 @@ img.hero-bg {
   background-image: url(../imgs/Ser-P1.png);
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 100%;
-  height: 768px;
+  -webkit-background-size: cover;
 }
 
 .home-content-main {
   position: relative;
   width: 100%;
   text-align: center;
+  padding-top: 200px;
 }
 
 .sub-container {
@@ -56,9 +60,12 @@ section.d-service-p2 {
 }
 
 section.d-service-p3 {
-  background: #cccccc0d;
+  background: #cccccc6e;
   padding: 10px;
-  height: 1200px;
+  @media screen and (max-width: $break-mobile) {
+    min-height: auto;
+    overflow: hidden;
+  }
 }
 
 .block {
@@ -69,38 +76,50 @@ section.d-service-p3 {
   background: #fff;
   margin: 1%;
   text-align: center;
+  padding: 34px;
+  min-height: 155px;
+  @media screen and (max-width: $break-mobile) {
+    width: 48%;
+    min-height: 130px;
+  }
 }
-.block:before {
-  content: "";
-  display: block;
-  margin-top: 100%;
+.quote-block {
+  @media screen and (max-width: $break-mobile) {
+    display: none;
+  }
 }
 .block .block-content {
-  position: absolute;
 }
 .block-1 {
   background: $DD-pink;
 }
 .block-2 {
   background: $DD-white;
+  color: $DD-yellow;
 }
 .block-3 {
   background: $DD-green;
 }
 .block-4 {
   background: $DD-white;
+  color: $DD-blue;
 }
 .block-5 {
   background: $DD-blue;
 }
 .block-6 {
   background: $DD-white;
+  color: $DD-green;
 }
 .block-7 {
   background: $DD-green;
+  @media screen and (max-width: $break-mobile) {
+    display: none;
+  }
 }
 .block-8 {
   background: $DD-white;
+  color: $DD-pink;
 }
 .block-9 {
   background: $DD-yellow;
@@ -109,4 +128,20 @@ section.d-service-p3 {
 section.d-service-p4 {
   background: $DD-blue;
   text-align: center;
+  padding: 50px;
+  @media screen and (max-width: $break-mobile) {
+    min-height: auto;
+    overflow: hidden;
+  }
+}
+
+section#service {
+  min-height: 770px;
+  @media screen and (max-width: $break-mobile) {
+    min-height: 560px;
+  }
+}
+
+.block-content img {
+  width: 30%;
 }
