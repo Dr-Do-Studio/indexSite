@@ -92,13 +92,7 @@ section#home {
   background-image: url(../imgs/Home-P1.jpg);
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 150%; }
-  @media screen and (max-width: 820px) {
-    section#home {
-      background-size: 200%; } }
-  @media screen and (max-width: 414px) {
-    section#home {
-      background-size: 300%; } }
+  -webkit-background-size: cover; }
 
 .home-content {
   padding: 50px 90px; }
@@ -155,10 +149,11 @@ section#home-P2 {
 
 section#home-P3 {
   padding-bottom: 4rem;
-  padding-top: 4rem; }
+  padding-top: 4rem;
+  text-align: center; }
 
 #home-P3 img {
-  width: 100%;
+  width: 50%;
   margin-top: 20px; }
 
 /*# sourceMappingURL=home.css.map */

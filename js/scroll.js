@@ -7,7 +7,6 @@ $(document).ready(function() {
       opacity = scroll / 200;
 
       backgroundopacity = "rgba(0, 0, 0, " + opacity + ")";
-      console.log(backgroundopacity);
       $(".d-header").css({
         "background-color": backgroundopacity
       });

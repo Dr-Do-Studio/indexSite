@@ -34,11 +34,7 @@ moveBG();
 $(document).scroll(function() {
   var scroll_p = $(this).scrollTop();
   $(".d-home").css({
-    "background-position-y": -scroll_p
-  });
-  $(".sub-container").css({
-    top: -scroll_p / 5,
-    bottom: scroll_p / 5
+    "background-position-y": -scroll_p / 5
   });
 });
 

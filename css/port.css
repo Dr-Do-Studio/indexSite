@@ -2,13 +2,7 @@ section#port {
   background-image: url(../imgs/Port-P1.jpg);
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 120%; }
-  @media screen and (max-width: 820px) {
-    section#port {
-      background-size: 200%; } }
-  @media screen and (max-width: 820px) {
-    section#port {
-      background-size: 300%; } }
+  -webkit-background-size: cover; }
 
 section#port {
   padding-top: 15rem; }
