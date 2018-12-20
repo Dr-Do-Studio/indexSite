@@ -3,6 +3,10 @@ section#port {
   background-repeat: no-repeat;
   background-position: top center;
   -webkit-background-size: cover; }
+  section#port section a:link,
+  section#port section a:visited {
+    text-decoration: underline;
+    color: #fb2366; }
 
 section#port {
   padding-top: 15rem; }
@@ -65,7 +69,6 @@ section#port-P2 {
   background: white; }
 
 .proj-img {
-  width: 40%;
   float: left;
   text-align: center; }
 
@@ -80,8 +83,9 @@ section#port-P2 {
 section.d-port {
   padding: 30px; }
 
-.proj-img img {
-  width: 80%; }
+#port-P3 .proj-img img {
+  width: 63%;
+  margin: 40px; }
 
 section#port-P4 {
   background: #fff;
@@ -93,7 +97,6 @@ section#port-P4 {
   text-align: center; }
 
 .proj-img.port-1 {
-  position: absolute;
   bottom: -361px;
   width: 250px;
   margin-left: 5%; }
@@ -146,5 +149,27 @@ section#port-P5 {
   background: black;
   border: 2px solid #fff;
   color: #fff; }
+
+section#port-P2 {
+  min-height: 400px; }
+
+section#port-P3 {
+  min-height: 400px;
+  background-color: #395771; }
+
+section#port-P3 .proj-title img {
+  width: 50%; }
+
+section#port-P4 {
+  min-height: 400px; }
+
+section#port-P4 .proj-img img {
+  width: 250px;
+  margin-top: -30px;
+  margin-left: 24%; }
+
+section#port-P4 .proj-title img {
+  width: 40%;
+  margin-top: -57px; }
 
 /*# sourceMappingURL=port.css.map */
