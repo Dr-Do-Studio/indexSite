@@ -13,20 +13,16 @@ $break-mobile: 414px;
 .contact-section {
   width: 70%;
   margin: 0 auto;
-  margin-top: 15%;
   overflow: hidden;
-  margin-bottom: 60px;
-  @media screen and (max-width: $break-small) {
-    margin-top: 24%;
-  }
-  @media screen and (max-width: $break-mobile) {
-    margin-top: 45%;
-  }
+  padding-top: 20%;
 }
 
 section#contact {
   text-align: center;
-  background: #000000e6;
+  background-image: url(../imgs/contact.jpeg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  -webkit-background-size: cover;
 }
 
 form.contact-form {
@@ -56,6 +52,7 @@ form.contact-form {
   height: 600px;
   padding: 60px 60px;
   text-align: left;
+  background: #000000a8;
   @media screen and (max-width: $break-small) {
     width: 100%;
     height: 300px;
@@ -193,4 +190,10 @@ input[type="submit"]:hover {
   @media screen and (max-width: $break-small) {
     top: 55%;
   }
+}
+
+.form {
+  overflow: hidden;
+  background-color: #000000c4;
+  margin-bottom: 68px;
 }
