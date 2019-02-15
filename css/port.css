@@ -321,6 +321,7 @@ section#port-P5 {
   }
   section#port-P5 {
     background-size: auto;
+    background-position: 0 -192px;
   }
   .below-circle-1 {
     color: #003f87;
