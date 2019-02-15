@@ -99,6 +99,7 @@ p.info-section-header {
 }
 
 input[type="text"],
+input,
 textarea {
   -webkit-appearance: none;
   color: #333;
