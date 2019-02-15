@@ -170,20 +170,14 @@ section#port-P5 {
 }
 
 .person-profile {
-  width: 26%;
+  width: 45%;
   padding: 40px;
   background: #fff;
   color: black;
   margin: 30px;
   float: left;
   text-align: center;
-}
-
-.person-profile:hover {
-  background: black;
-  border: 1px solid #fff;
-  padding: 39px;
-  color: #fff;
+  overflow: hidden;
 }
 
 section#port-P2 {
@@ -354,5 +348,76 @@ section#port-P5 {
   }
   .circle {
     margin-left: calc(50% - 72px);
+  }
+}
+
+section#port-P6 {
+  background-image: url("../imgs/port-team-bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.left-col .profile-photo img {
+  width: 120px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.left-col .profile-photo {
+  width: 100%;
+  position: absolute;
+  margin-top: -70px;
+  left: -64px;
+}
+
+.right-col .profile-photo img {
+  width: 120px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.right-col .profile-photo {
+  width: 100%;
+  position: absolute;
+  margin-top: -70px;
+  left: 535px;
+}
+
+.person-profile.left-col {
+  border-radius: 50px 0;
+}
+.person-profile.right-col {
+  border-radius: 0 50px;
+}
+
+p.name {
+  font-weight: 800;
+  font-size: 27px;
+}
+p.position {
+  color: #818181;
+}
+
+p.description {
+  font-size: 13px;
+  margin-top: 15px;
+  color: #656565;
+}
+
+@media screen and (max-width: 1015px) {
+  .person-profile {
+    width: 100%;
+    margin: 0;
+  }
+  .left-col .profile-photo {
+    left: 42%;
+  }
+  .right-col .profile-photo {
+    left: -39%;
+  }
+  section#port-P6 {
+    background-size: auto 100%;
+  }
+  .person-profile.left-col {
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
