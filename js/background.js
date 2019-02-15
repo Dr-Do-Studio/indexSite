@@ -32,7 +32,7 @@ moveBG();
 */
 
 $(document).scroll(function() {
-  if (window.innerWidth >= 600) {
+  if (window.innerWidth >= 800) {
     var scroll_p = $(this).scrollTop();
     $(".d-home").css({
       "background-position-y": -scroll_p / 5
