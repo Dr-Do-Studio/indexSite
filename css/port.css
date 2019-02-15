@@ -363,10 +363,9 @@ section#port-P6 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .left-col .profile-photo {
-  width: 100%;
   position: absolute;
   margin-top: -70px;
-  left: -64px;
+  left: 41%;
 }
 
 .right-col .profile-photo img {
@@ -375,10 +374,9 @@ section#port-P6 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .right-col .profile-photo {
-  width: 100%;
   position: absolute;
   margin-top: -70px;
-  left: 535px;
+  left: 85%;
 }
 
 .person-profile.left-col {
@@ -408,10 +406,10 @@ p.description {
     margin: 0;
   }
   .left-col .profile-photo {
-    left: 42%;
+    left: 72%;
   }
   .right-col .profile-photo {
-    left: -39%;
+    left: 0;
   }
   section#port-P6 {
     background-size: auto 100%;
